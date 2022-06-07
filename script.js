@@ -1,28 +1,11 @@
-function emailValidaction() {
-  const email = document.querySelector('#email');
-  if (email.value === 'tryber@teste.com') {
-    return true;
-  }
-  return false;
-}
-
-function passwordValidation() {
-  const password = document.querySelector('#password');
-  if (password.value === '123456') {
-    return true;
-  }
-  return false;
-}
-
-function submit() {
-  if (emailValidaction === true && passwordValidation === true) {
+const submitButton = document.querySelector('.submit-button');
+submitButton.addEventListener('click', (event) => {
+  event.preventDefault();
+  const email = document.getElementById('email');
+  const senha = document.getElementById('password');
+  if (email.value === 'tryber@teste.com' && senha.value === '123456') {
     alert('Olá, Tryber!');
   } else {
-    alert('Email ou senha inválidos');
+    alert('Email ou senha inválidos.');
   }
-}
-
-// window.onload = function () {
-//   const submitBtn = document.querySelector('submit-button');
-//   submitBtn.addEventListener('click', submit);
-// };
+});
