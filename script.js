@@ -9,3 +9,10 @@ submitButton.addEventListener('click', (event) => {
     alert('Email ou senha inválidos.');
   }
 });
+
+const formButton = document.querySelector('#submit-btn');
+const agreement = document.querySelector('#agreement');
+agreement.addEventListener('change', (event) => {
+  event.preventDefault();
+  formButton.disabled = !agreement.checked;
+});
