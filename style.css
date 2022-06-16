@@ -31,3 +31,12 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+footer {
+  display: flex;
+  background-color: black;
+  color: white;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+}
