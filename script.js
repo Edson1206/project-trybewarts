@@ -16,3 +16,24 @@ agreement.addEventListener('change', (event) => {
   event.preventDefault();
   formButton.disabled = !agreement.checked;
 });
+
+// const desc = document.querySelector('#textarea');
+// desc.addEventListener('keypress', (event) => {
+//   const maxChars = 500;
+//   const inputLength = desc.value.length;
+//   if (inputLength >= maxChars) {
+//     event.preventDefault();
+//   }
+// });
+
+const desc = document.querySelector('#textarea');
+desc.addEventListener('input', (event) => {
+  const maxText = 500;
+  const textArea = desc.value.length;
+  const rest = maxText - textArea;
+  const count = document.querySelector('#counter');
+  count.innerText = `Caracteres restantes: ${rest}`;
+  if (textArea >= maxText) {
+    event.preventDefault();
+  }
+});
