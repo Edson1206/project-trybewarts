@@ -21,7 +21,7 @@
   </header>
   <main>
     <form id="evaluation-form" action="">
-      <h1>Formulário de Avaliação</h1>
+      <h2>Formulário de Avaliação</h2>
       <section id="identify">
         <div id="name-lastname">
           <input id="input-name" type="text" placeholder="Nome">
@@ -58,20 +58,20 @@
         <div id="fs-2">
           <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
           <div>
-          <input id="hofs" class="subject" type="checkbox" value="HoFs">
+          <input id="hofs" class="subject" type="checkbox" name="content" value="HoFs">
           <label for="hofs">HoFs</label>
-          <input id="jest" class="subject" type="checkbox" value="Jest">
+          <input id="jest" class="subject" type="checkbox" name="content" value="Jest">
           <label for="jest">Jest</label>
-          <input id="promises" class="subject" type="checkbox" value="Promises">
+          <input id="promises" class="subject" type="checkbox" name="content" value="Promises">
           <label for="promises">Promises</label>
           <br>
-          <input id="react" class="subject" type="checkbox" value="React">
+          <input id="react" class="subject" type="checkbox" name="content" value="React">
           <label for="react">React</label>
-          <input id="sql" class="subject" type="checkbox" value="SQL">
+          <input id="sql" class="subject" type="checkbox" name="content" value="SQL">
           <label for="sql">SQL</label>
-          <input id="python" class="subject" type="checkbox" value="Python">
+          <input id="python" class="subject" type="checkbox" name="content" value="Python">
           <label for="python">Python</label>
-          <input id="react" class="subject" type="checkbox" value="React">
+          <input id="react" class="subject" type="checkbox" name="content" value="React">
           <label for="react">React</label>
           </div>
         </div>
@@ -112,6 +112,7 @@
           <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
           <input type="checkbox" name="agreement" id="agreement">
         </div>
+        <br>
         <div>
           <button id="submit-btn" type="submit" disabled>Enviar</button>
         </div>
@@ -122,5 +123,4 @@
   <footer>Direitos reservados à Trybewarts©</footer>
   <script src="script.js"></script>
 </body>
-
 </html>

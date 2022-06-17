@@ -17,15 +17,6 @@ agreement.addEventListener('change', (event) => {
   formButton.disabled = !agreement.checked;
 });
 
-// const desc = document.querySelector('#textarea');
-// desc.addEventListener('keypress', (event) => {
-//   const maxChars = 500;
-//   const inputLength = desc.value.length;
-//   if (inputLength >= maxChars) {
-//     event.preventDefault();
-//   }
-// });
-
 const desc = document.querySelector('#textarea');
 desc.addEventListener('input', (event) => {
   const maxText = 500;
@@ -35,5 +26,10 @@ desc.addEventListener('input', (event) => {
   count.innerText = `Caracteres restantes: ${rest}`;
   if (textArea >= maxText) {
     event.preventDefault();
+  }
+  if (textArea > 470) {
+    count.setAttribute('style', 'color: red');
+  } else {
+    count.setAttribute('style', 'color: black');
   }
 });
