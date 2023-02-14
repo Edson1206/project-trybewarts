@@ -49,6 +49,12 @@ form {
   flex-direction: column;
 }
 
+#form-data {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
+
 h1 {
   text-align: center;
   color: white;
